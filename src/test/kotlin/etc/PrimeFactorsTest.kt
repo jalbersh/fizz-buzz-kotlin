@@ -52,7 +52,7 @@ class PrimeFactorsTest {
 //    val factorsOf = { n: Int ->                // lambda fun
 //    val factorsOf: (Int) -> List<Int> = { n -> // lambda fun
     var factorsOf = fun(n: Int): List<Int> {     // Anonymous fun
-        var remainder = n
+        var remainder:Int = n
         val factors = mutableListOf<Int>()
         var divisor = 2
         while (remainder>1) {
